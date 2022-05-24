@@ -1,0 +1,7 @@
+-> Place your video file i.e. .mp4, .ogg, .webm with all same name
+--> Video-bg.jpg image is default background image.
+--> Open jquery.backgroundvideo.min.js located in js folder
+--> Locate the comment //video Init at the top of the file.
+--> Replace path attribute to your video file path 
+--> Replace filename attribute to your video file name.
+--> ENJOY!
