@@ -37,6 +37,12 @@ return [
         ],
         'course_student' => [
             'title' => 'Yêu cầu vào khoá học'
+        ],
+        'tools' => [
+            'title' => 'Hoạ cụ'
+        ],
+        'student_picture' => [
+            'title' => 'Tranh của học sinh'
         ]
     ],
 ];

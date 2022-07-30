@@ -63,13 +63,13 @@
 {{--                            <h4 class="heading6 lp-0 mt-0 font-face1 text-left">Giảng viên</h4>--}}
 {{--                            <p class="bold-text">{{ $course->teacher_name }}</p>--}}
                             <p class="bold-text">Hotline:</p>
-                            <p>096 987 2072 (Ms. Linh)</p>
+                            <p>0987654321</p>
                             <p class="bold-text">Email:</p>
-                            <p>info.strawberryartgarden@gmail.com</p>
+                            <p>info.lopveonline@gmail.com</p>
                             <p class="bold-text">Website:</p>
-                            <p>vuonnghethuatdautay.vn</p>
+                            <p>lopveonline.tk</p>
                             <p class="bold-text">Fanpage:</p>
-                            <p>fb.com/Vuon.nghe.thuat.Dau.tay</p>
+                            <p>fb.com/lopveonline</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Bạn hãy chuyển khoản tới số tài khoản 030 1000 337 097 ngân hàng Vietcombank chi nhánh Hoàn Kiếm, Hà Nội. Chủ khoản Phạm Quỳnh Anh.</p>
+                                    <p>Bạn hãy chuyển khoản tới số tài khoản 000 0000 000 000 ngân hàng Vietcombank chi nhánh Hai Bà Trưng, Hà Nội. Chủ khoản Nguyễn Tâm.</p>
                                     <p>Số tiền: {{ number_format($course->getCurrentPrice(), 0, ',', '.') }} VNĐ</p>
                                     <p>Nội dung chuyển khoản: DANG KY KHOA HOC {{ $course->name }} SDT {{ auth()->user()->phone_number }}</p>
                                     <p>Sau khi chuyển khoản ấn nút đăng ký dưới đây</p>

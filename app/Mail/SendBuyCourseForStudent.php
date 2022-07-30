@@ -35,7 +35,7 @@ class SendBuyCourseForStudent extends Mailable
     public function build()
     {
         return $this
-            ->subject("Chào mừng Quý học viên đã đăng ký khoá học vẽ online tại Vườn nghệ thuật Dâu Tây (SAG)")
+            ->subject("Chào mừng Quý học viên đã đăng ký khoá học vẽ online tại Lớp Vẽ Online")
             ->view('mails.buy_course_for_student');
     }
 }

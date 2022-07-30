@@ -7,6 +7,9 @@ use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\CourseStudentController;
+use App\Http\Controllers\Admin\ToolController;
+use App\Http\Controllers\Admin\OrdersController;
+use App\Http\Controllers\Admin\StudentPictureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,4 +59,25 @@ Route::group([
         ->name('course_student.accept');
     Route::get('course_student/{id}/deny', [CourseStudentController::class, 'deny'])
         ->name('course_student.deny');
+
+    // Tool Management.
+    Route::get('tool', [ToolController::class, 'list'])->name('tool.list');
+    Route::get('tool/create', [ToolController::class, 'create'])->name('tool.create');
+    Route::post('tool', [ToolController::class, 'store'])->name('tool.store');
+    Route::get('tool/{id}/edit', [ToolController::class, 'edit'])->name('tool.edit');
+    Route::post('tool/{id}', [ToolController::class, 'update'])->name('tool.update');
+    Route::get('tool/{id}/destroy', [ToolController::class, 'destroy'])->name('tool.destroy');
+
+    // Order Management.
+    Route::get('order', [OrdersController::class, 'list'])
+        ->name('order.list');
+//    Route::get('course_student/{id}/accept', [CourseStudentController::class, 'accept'])
+//        ->name('course_student.accept');
+//    Route::get('course_student/{id}/deny', [CourseStudentController::class, 'deny'])
+//        ->name('course_student.deny');
+
+    // Student Picture Management.
+    Route::get('student_picture', [StudentPictureController::class, 'list'])->name('student_picture.list');
+    Route::get('student_picture/{id}/edit', [StudentPictureController::class, 'edit'])->name('student_picture.edit');
+    Route::post('student_picture/{id}', [StudentPictureController::class, 'update'])->name('student_picture.update');
 });

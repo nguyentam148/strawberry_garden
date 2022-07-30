@@ -27,6 +27,12 @@ class Lesson extends Model
         return $this->belongsTo(Course::class);
     }
 
+    public function sample_picture()
+    {
+        return $this->hasMany(SamplePicture::class);
+    }
+
+
     public static function getCourses()
     {
         return Course::query()->get();
@@ -40,5 +46,17 @@ class Lesson extends Model
 
         return Storage::disk('public')
             ->url("videos/{$this->video_path}/master.m3u8");
+    }
+
+    public function getSamplePicture1()
+    {
+        return Storage::disk('public')
+            ->url($this->sample_picture()->pluck("picture")->toArray()[0] ?? "");
+    }
+
+    public function getSamplePicture2()
+    {
+        return Storage::disk('public')
+            ->url($this->sample_picture()->pluck("picture")->toArray()[1] ?? "");
     }
 }

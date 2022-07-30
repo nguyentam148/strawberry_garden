@@ -31,6 +31,7 @@ class AdminController extends Controller
 
             return response()->json([
                 'status' => true,
+                'statusCode' => 200,
                 'message' => __('custom.message.upload_file_success'),
                 'data' => [
                     'path' => $path,
@@ -40,6 +41,7 @@ class AdminController extends Controller
         } catch (Throwable $exception) {
             return response()->json([
                 'status' => false,
+                'statusCode' => 500,
                 'message' => __('custom.message.upload_file_fail'),
                 'error' => $exception->getMessage()
             ]);

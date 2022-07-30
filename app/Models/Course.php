@@ -51,6 +51,11 @@ class Course extends Model
         return $this->hasMany(Lesson::class);
     }
 
+    public function painting_tool()
+    {
+        return $this->belongsToMany(PaintingTool::class, "course_painting_tools", "course_id", "painting_tool_id");
+    }
+
     public static function getPeopleTypes(bool $onlyKey = false): array
     {
         $data = [

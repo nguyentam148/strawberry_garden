@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Website\WebsiteController;
 use App\Http\Controllers\Website\StudentController;
+use App\Http\Controllers\Admin\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,11 @@ Route::group([
     Route::post('buy-course/{course_id}', [StudentController::class, 'buyCourse'])->name('students.buy_course');
 
     Route::get('courses/{slug}/learning', [WebsiteController::class, 'learnCourse'])->name('course.learn');
+    Route::post('courses/buy-tool', [WebsiteController::class, 'buyTool'])->name('course.buy_tool');
+    Route::post('learning/post_student_picture', [WebsiteController::class, 'postStudentPicture'])->name('learning.post_student_picture');
+
+    Route::post('learning/check_student_picture', [WebsiteController::class, 'checkStudentPicture'])->name('learning.check_student_picture');
+
+    Route::post('upload', [AdminController::class, 'upload'])->name('upload');
 });
+

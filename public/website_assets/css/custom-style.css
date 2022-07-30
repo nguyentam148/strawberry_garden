@@ -626,3 +626,31 @@ body.modal-open {
         height: 300px;
     }
 }
+
+.btn-sample-picture {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-upload-picture {
+    color: #fff;
+    background-color: #116a10;
+    border-color: #116a10;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-buy-tool {
+    color: #fff;
+    background-color: #d01d23;
+    border-color: #d01d23;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.plyr audio, .plyr iframe, .plyr video {
+    max-height: 400px
+}

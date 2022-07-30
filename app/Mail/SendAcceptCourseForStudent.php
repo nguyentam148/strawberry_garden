@@ -41,7 +41,7 @@ class SendAcceptCourseForStudent extends Mailable
         $isAccepted = $this->courseStudent->isAccepted();
 
         return $this
-            ->subject("Thông báo phê duyệt thành công đăng ký khoá học vẽ online tại SAG")
+            ->subject("Thông báo phê duyệt thành công đăng ký khoá học vẽ online tại Lớp Vẽ Online")
             ->view('mails.accept_course_for_student', compact('isAccepted'));
     }
 }

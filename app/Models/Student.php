@@ -79,6 +79,11 @@ class Student extends Authenticatable
         return $this->belongsToMany(Course::class, 'course_student');
     }
 
+    public function student_picture()
+    {
+        return $this->hasOne(StudentPicture::class, 'student_id');
+    }
+
     public function getMyCourses()
     {
         return $this->courses()

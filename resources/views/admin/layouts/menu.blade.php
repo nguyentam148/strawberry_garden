@@ -72,6 +72,33 @@
                         <p>{{ __('custom.module.lessons.title') }}</p>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('admin.tool.list') }}"
+                       class="nav-link {{ str_starts_with(request()->route()->getName(), 'admin.tool') ? 'active' : '' }}"
+                       title="Hoạ cụ">
+                        <i class="nav-icon fas fa-pencil-ruler"></i>
+                        <p>Hoạ cụ</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('admin.order.list') }}"
+                       class="nav-link {{ str_starts_with(request()->route()->getName(), 'admin.order') ? 'active' : '' }}"
+                       title="Đơn hàng">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>Đơn hàng</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('admin.student_picture.list') }}"
+                       class="nav-link {{ str_starts_with(request()->route()->getName(), 'admin.student_picture') ? 'active' : '' }}"
+                       title="Tranh vẽ học sinh">
+                        <i class="nav-icon fas fa-images"></i>
+                        <p>Tranh của học sinh</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

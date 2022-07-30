@@ -14,7 +14,7 @@
                             </div>
                             <div class="description">
                                     <span
-                                        class="light-text">P12A16 - N03B - New Horizon City 87 Lĩnh Nam, Hoàng Mai, HN</span>
+                                        class="light-text">Số 1 Trần Đại Nghĩa Hà Nội</span>
                             </div>
                         </div>
                         <div class="info info-horizontal wow slideInLeft">
@@ -22,7 +22,7 @@
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="description">
-                                <span class="light-text">096 987 20 72</span>
+                                <span class="light-text">0987654321</span>
                             </div>
                         </div>
                         <div class="info info-horizontal wow slideInLeft">
